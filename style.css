@@ -1,0 +1,100 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Header Styling */
+header {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    color: #333;
+}
+
+#current-time, #current-date {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+#current-time {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+#current-date {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+h3 {
+    font-size: 2rem;
+    margin: 40px 0 20px;
+}
+
+/* Form Container Styling */
+.form-container {
+    width: 100%;
+    max-width: 500px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    margin-top: 10px;
+    display: block;
+    color: #333;
+}
+
+input[type="text"], input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+#all-records-button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 12px;
+    background-color: #008aad;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#all-records-button:hover {
+    background-color: #2e00ad;
+}

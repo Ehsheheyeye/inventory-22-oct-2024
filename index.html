@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Inventory Record</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div id="current-time"></div>
+    <div id="current-date"></div>
+    <h3>Daily Inventory Record</h3>
+  </header>
+
+  <div class="form-container">
+    <form method="POST" name="google-sheet">
+      <input type="hidden" id="hidden-date" name="Date">
+      <input type="hidden" id="hidden-time" name="Time">
+
+      <label for="clientlocation">Client / Location</label>
+      <input type="text" id="client-location" name="Client" placeholder="Korus Computer, Rahul sir ..." list="client-list" autocomplete="off">
+      <datalist id="client-list">
+        <!-- Client Options -->
+        <option value="Rahul sir"></option>
+        <option value="Ravi"></option>
+        <option value="DSK"></option>
+<option value="Aasha homeopathy"></option>
+<option value="Acme IT Solutions"></option>
+<option value="Audio Video Care"></option>
+<option value="BAP Computers"></option>
+<option value="Bhurani Computers"></option>
+<option value="Boy's Town"></option>
+<option value="CA Chafekar"></option>
+<option value="Chakaradhar engineering"></option>
+<option value="Chip com"></option>
+<option value="Crucial Service Center"></option>
+<option value="Fins Solutions"></option>
+<option value="Gangagiri Ambad"></option>
+<option value="Gangagiri Ashok Nagar"></option>
+<option value="Great Eastern"></option>
+<option value="Hotel Ayodhya"></option>
+<option value="Hotel BLVD"></option>
+<option value="Hotel Curry Leaves Accounts"></option>
+<option value="Hotel Curry Leaves Bavan"></option>
+<option value="Hotel Curry Leaves Jehan"></option>
+<option value="Hotel Grand Curry Leaves"></option>
+<option value="Hotel Mazali"></option>
+<option value="HP Service Center"></option>
+<option value="Infowave Computer"></option>
+<option value="Ira diagnosis"></option>
+<option value="IT Solutions"></option>
+<option value="Jay Shiv Om industry"></option>
+<option value="Korus Computers"></option>
+<option value="Mayur"></option>
+<option value="Meera Home"></option>
+<option value="MHB Colony"></option>
+<option value="Moule Petrolum"></option>
+<option value="Multitech Services"></option>
+<option value="Nate"></option>
+<option value="Nice Computers"></option>
+<option value="Om Hardware"></option>
+<option value="Om Sonography"></option>
+<option value="Orbital"></option>
+<option value="Parshwa"></option>
+<option value="Prime Graphite"></option>
+<option value="Prime Graphite D62"></option>
+<option value="Rahul sir"></option>
+<option value="Raka Infosys"></option>
+<option value="Ravi Raka"></option>
+<option value="RP Tech"></option>
+<option value="Rx Service Center"></option>
+<option value="Saikrupa Industries"></option>
+<option value="San Computek"></option>
+<option value="Sankal Hospital"></option>
+<option value="Sapat Tea"></option>
+<option value="Satguru Trasport"></option>
+<option value="SBI Ashok Nagar"></option>
+<option value="SH Jadhav"></option>
+<option value="Shree Enterprises"></option>
+<option value="Shreenath Engineering"></option>
+<option value="Varad Agency"></option>
+<option value="Vighnaharata Sales"></option>
+<option value="Winar Enterprises"></option>
+<option value="Hindavi Trasport"></option>
+<option value="Total Computer Solutions"></option>
+<option value="Ajju Da Dhabha"></option>
+<option value="Hotel Amrut Garden"></option>
+<option value="Jay Lab Satpur"></option>
+<option value="Dhandai Enterprises"></option>
+<option value="Nitin Electicals"></option>
+<option value="Perfect Computers"></option>
+<option value="Kamgar Kalyan"></option>
+<option value="Kamgar Kalyan Cidco"></option>
+<option value="Quest Computers"></option>
+<option value="Abhay Steel"></option>
+<option value="Abhay Products"></option>
+<option value="Mahalaxmi Pathswanshta Satpur"></option>
+<option value="Vijay Nagar Nagari Pathswanshta"></option>
+<option value="Datasoft Computers"></option>
+<option value="Korus Infotech"></option>
+<option value="Korus Computech"></option>
+<option value="Slidewell"></option>
+<option value="Bhor Chemical Vilholi"></option>
+<option value="Dagau teli"></option>
+<option value="Savex Computers"></option>
+<option value="Indial Tools"></option>
+<option value="Kuber Petrolum"></option>
+<option value="Shiva associate"></option>
+<option value="Gemini"></option>
+<option value="Gargi Medical"></option>
+<option value="Shree Chatrapati Vidyalay"></option>
+<option value="KVIC"></option>
+<option value="Yash Photo Studio"></option>
+<option value="HDFC Bank"></option>
+<option value="Canara Bank"></option>
+<option value="Megatech Computers"></option>
+<option value="Ishwari Multipurpose"></option>
+<option value="Hotel Sailila"></option>
+<option value="Pragati Padamashree"></option>
+<option value="Hi-Tech Traders"></option>
+<option value="CA Nikhil Shabara"></option>
+<option value="Satyam Sales"></option>
+<option value="Nakshtra Engineering"></option>
+<option value="Chetana Engineering"></option>
+<option value="Media Shopee"></option>
+<option value="Usha Infotech"></option>
+<option value="Yash Computers"></option>
+<option value="Aquil Media"></option>
+<option value="Ambika Sweets Ashok Nagar"></option>
+<option value="Vivo Service Center"></option>
+<option value="Drawing Class"></option>
+<option value="Om Electric mart"></option>
+<option value="Raj Sports"></option>
+<option value="Shree Krushna Enterprises"></option>
+<option value="Diamond Traders"></option>
+<option value="SR Enterprises"></option>
+<option value="Manish Gifts"></option>
+<option value="Tapari"></option>
+<option value="Vishwakarama Hardware"></option>
+<option value="Madhur sweets"></option>
+<option value="DCC Computers"></option>
+<option value="Fabrication"></option>
+<option value="Deshmukh Home"></option>
+<option value="Deshmukh Kirana"></option>
+<option value="Bhonsala College"></option>
+<option value="Slidewell A6"></option>
+<option value="Slidewell E2"></option>
+<option value="Suyog Collection"></option>
+<option value="YCMOU"></option>
+<option value="Vaishnavi Mobile"></option>
+<option value="Sarvadnya stationery"></option>
+<option value="YCMOU Gangapur"></option>
+<option value="Shell Petrol pump"></option>
+<option value="Plot"></option>
+<option value="Perfect Computer Godown"></option>
+<option value="Sushila Hospital"></option>
+<option value="Sarthak Hospital"></option>
+<option value="New Suyog Collection"></option>
+        <option value="Korus Computer"></option>
+        <!-- Add more client options here -->
+      </datalist>
+
+      <label for="workdescription">Work Description</label>
+      <input type="text" id="work-description" name="Description" placeholder="Dell laptop give..">
+
+      <input type="submit" value="Submit" name="submit">
+    </form>
+    <button id="all-records-button" onclick="viewAllRecords()">See All Records</button>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
